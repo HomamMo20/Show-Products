@@ -12,7 +12,7 @@ function App() {
         alert(err);
       }
     );
-    FIXME: if (result?.data.status >= 400) {
+    if (result?.data.status >= 400) {
       alert(result.data.message);
     } else {
       for (const product of result.data) {

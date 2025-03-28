@@ -33,8 +33,7 @@ const Product = ({
           <div className="product__sold-bar-container">
             <span
               className="product__sold-bar"
-              style={{ width: soldStrength + "%" }}
-            ></span>
+              style={{ width: soldStrength + "%" }}></span>
           </div>
           <p className="product__sold-text">{`sold ${quantitySold} from ${productQuantity}`}</p>
         </div>
@@ -47,8 +46,7 @@ const Product = ({
               {productDescription}{" "}
               <span
                 className="product__content-more"
-                onClick={() => onExpand(id)}
-              >
+                onClick={() => onExpand(id)}>
                 show less
               </span>
             </p>
@@ -60,8 +58,7 @@ const Product = ({
               {cutProductDescription ? (
                 <span
                   className="product__content-more"
-                  onClick={() => onExpand(id)}
-                >
+                  onClick={() => onExpand(id)}>
                   ...more
                 </span>
               ) : (
@@ -75,8 +72,7 @@ const Product = ({
           <div className="product__count">
             <svg
               className="product__decrease icon"
-              onClick={() => onDecrease(id)}
-            >
+              onClick={() => onDecrease(id)}>
               <use href={sprite + "#arrow"}></use>
             </svg>
             <input
@@ -89,8 +85,7 @@ const Product = ({
             />
             <svg
               className="product__increase icon"
-              onClick={() => onIncrease(id)}
-            >
+              onClick={() => onIncrease(id)}>
               <use href={sprite + "#arrow"}></use>
             </svg>
           </div>
